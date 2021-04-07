@@ -1,4 +1,4 @@
-# DevOps Engineer coding task
+# DevOps Engineer Challenge
 
 Implement infrastructure as code (IaC) for a simple web application that runs on AWS Lambda that prints the request header, method, and body, the application shoud be intergrated with CI/CD meaning regardless if it uses simple GitHub actions, or any other related technology 
 
