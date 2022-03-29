@@ -26,5 +26,5 @@ module "api_gateway" {
 }
 
 output "test_command" {
-  value = 'curl --header "Content-Type: application/json" --data \'{"username":"xyz","password":"xyz"}\' ${module.api_gateway.base_url}/hello'
+  value = module.api_gateway.base_url
 }
