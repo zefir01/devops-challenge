@@ -25,6 +25,6 @@ module "api_gateway" {
   lambda_arn = module.lambda.function_arn
 }
 
-output "lambda_url" {
-  value = module.api_gateway.base_url
+output "test_command" {
+  value = "curl --header \"Content-Type: application/json\" --data '{\"username\":\"xyz\",\"password\":\"xyz\"}' ${module.api_gateway.base_url}/hello"
 }
